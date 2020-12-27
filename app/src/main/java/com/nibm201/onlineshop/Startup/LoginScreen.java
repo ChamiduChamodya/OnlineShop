@@ -39,7 +39,7 @@ public class LoginScreen extends AppCompatActivity {
         createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginScreen.this, NewAccountCreate.class);
+                Intent intent = new Intent(LoginScreen.this, CreateAccount.class);
                 startActivity(intent);
             }
         });
@@ -48,6 +48,7 @@ public class LoginScreen extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finish();
                 Intent intent = new Intent(LoginScreen.this, MainActivity.class);
                 startActivity(intent);
             }
