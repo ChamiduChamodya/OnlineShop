@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#369A0C"
+    android:orientation="vertical"
+    tools:context=".Startup.SplashScreen">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Splash_screen_logo"
+        android:layout_width="192dp"
+        android:layout_height="167dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Please Wait"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/Splash_screen_logo"
+        tools:layout_editor_absoluteX="0dp"
+        android:textColor="#000000"/>
+
+    <ProgressBar
+        android:id="@+id/prograss_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="152dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#303030"
+        android:indeterminateTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
