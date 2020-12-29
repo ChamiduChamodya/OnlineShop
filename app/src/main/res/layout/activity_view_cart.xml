@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C4EFED">
+    tools:context=".customer.ViewCart">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,25 +14,36 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:gravity="center"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/fra_home_viewCart"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
-                android:layout_width="match_parent"
+            <CheckBox
+                android:id="@+id/viewCart_selectAll"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="View Your Cart"
+                android:layout_marginEnd="150dp"
+                android:text="Select All" />
+
+            <Button
+                android:id="@+id/viewCart_BuyNow"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Now"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
-                app:backgroundTint="#2E7140"
-                app:icon="@drawable/ic_baseline_shopping_cart"
-                app:iconGravity="textEnd"
-                app:iconPadding="20dp"
-                app:iconTint="#FFFFFF" />
-
+                app:backgroundTint="#2E7140" />
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#333232" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -40,14 +52,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:orientation="vertical">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
-
             </LinearLayout>
 
         </ScrollView>

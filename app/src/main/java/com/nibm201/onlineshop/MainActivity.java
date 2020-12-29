@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        //Slide drawer eken Customer log unama One nathi menu tika ain karanna Meka Use karanna
+        Menu menu =navigationView.getMenu();
+        MenuItem target = menu.findItem(R.id.nav_profile);
+        target.setVisible(false);
+
+
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new HomeFragment()).commit();

@@ -9,19 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineShop">
-        <activity android:name=".Startup.CreateAccount"/>
+        <activity android:name=".Profile.EditProfile"></activity>
+        <activity android:name=".customer.PurchaseItems" />
+        <activity android:name=".customer.PaymentSuccesfull" />
+        <activity android:name=".customer.Payment" />
+        <activity android:name=".customer.BuyNow" />
+        <activity android:name=".customer.ViewCart" />
+        <activity android:name=".Startup.CreateAccount" />
         <activity android:name=".Startup.ForgotPassword" />
         <activity android:name=".Startup.LoginScreen" />
-        <activity android:name=".Startup.SplashScreen" >
+        <activity android:name=".Startup.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
