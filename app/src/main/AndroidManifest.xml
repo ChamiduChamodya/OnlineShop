@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineShop">
-        <activity android:name=".Profile.EditProfile"></activity>
+        <activity android:name=".Profile.ProfileEdit"></activity>
         <activity android:name=".customer.PurchaseItems" />
         <activity android:name=".customer.PaymentSuccesfull" />
         <activity android:name=".customer.Payment" />
