@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/EditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#125E2D"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_edit_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_baseline_account_circle"
+                app:civ_border_color="#00E8E8E8"
+                app:civ_border_width="2dp" />
+
+
+            <EditText
+                android:id="@+id/profile_edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:inputType="text"
+                android:hint="Your Name"
+                android:textColorHint="#B6B3B3"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/profile_edit_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:hint="Bio Here"
+                android:inputType="textMultiLine"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BFBBBB"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Email"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/profile_edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="mail.example.com"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Mobile Number"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/profile_edit_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="phone"
+                        android:hint="0771234567"
+                        android:textColor="#000000"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Age"
+                        android:textColor="#000000" />
+
+                    <EditText
+                    android:id="@+id/profile_edit_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="25"
+                    android:textColor="#000000"
+                    android:inputType="text"
+                    android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="City"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/profile_edit_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Colombo"
+                        android:textColor="#000000"
+                        android:inputType="text"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Job Title"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/profile_edit_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="No Job"
+                        android:textColor="#000000"
+                        android:inputType="text"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Gender"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/profile_edit_gender"
+                        android:layout_width="181dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:backgroundTint="#DFDBDB"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Social Links"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/profile_edit_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Facebook"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/profile_edit_instagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Instagram"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/profile_edit_twitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Twitter"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/profile_edit_whatsapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="WhatsApp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/profile_edit_SaveButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#198012"
+                    android:text="Save"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
